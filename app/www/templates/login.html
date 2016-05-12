@@ -1,0 +1,46 @@
+<ion-view class="modal" style="background-image: url(img/background.jpg);background-position: center;background-size: cover">
+    <header class="bar bar-header no-border" style="background: transparent">
+        <h4 class="title text-center " style="color: white;font-weight: 100;font-size: 11px;">
+                Derechos reservados 2016 | Desarrollado por bienTICS
+        </h4>
+      <div class="button button-clear text-white pull-right no-border"  ng-click="modal.hide()">
+          <i class="fa fa-times color-white" aria-hidden="true"></i>
+      </div>
+    </header>
+    <ion-content>
+        <form class="form-login" style="margin-top: 150px;margin-left: 20px;margin-right: 20px">
+            <div style="">
+                <div class="list list-inset form-input-login" style="background: transparent;margin-top: -10px">
+                    <label class="item item-input input-login">
+                        <i class="icon ion-ios-person-outline color-white"></i>
+                        <input type="text" placeholder="Usuario" class="font-vpm input-back txt-user-login color-white" required="">
+                    </label>
+
+                    <label class="item item-input input-login" style="margin-top: 10px">
+                        <i class="icon ion-ios-unlocked-outline placeholder-icon color-white"></i>
+                        <input type="password" placeholder="Contraseña" class="font-vpm input-back color-white txt-pass-login" required="">
+                    </label>
+                    <label class="item  no-border" style="margin-top: 20px;background: transparent;padding: 0px!important">
+                        <button type="submit" ng-click="modal.hide()" ui-sref="app.principalPublico" class="button background-vpm font-vpm " style="width: 100%">Accesar</button>
+                    </label>
+                </div>
+            </div>
+        </form>   
+        <div class="row " style="margin-top: 0px;padding: 27px">
+            <hr class="hr">
+            <div class="col col-50">
+                <a href="" ng-click="loginFacebook()">
+                    <img src="img/login/i-facebook.png" style="width: 100%">
+                </a>
+            </div>
+            <div class="col col-50">
+                <a href="" ng-click="googleSignIn()">
+                    <img src="img/login/i-google.png" style="width: 100%">
+                </a>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="background-vpm">
+        <button class="button button-clear button-block  font-vpm color-white" style="top: -10px!important;font-size: 20px" >No tienes una cuenta? Regístrate</button>
+    </ion-footer-bar>
+</ion-view>

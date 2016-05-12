@@ -1,1 +1,23 @@
 /* Empty. Add your own CSS if you like */
+.text-center{
+    text-align: center!important;
+}
+.text-login{
+    font-weight: 200;
+    font-size: 12px;
+    color: black;
+}
+.img-inicio{
+    text-align: center;
+    margin-top: 50px;
+    width: 200px;
+
+}
+.background-imss{
+    background: #256659!important;
+    color: white!important;
+    margin-top: 0px!important;
+}
+.color-imss{
+    color: #256659!important;
+}
