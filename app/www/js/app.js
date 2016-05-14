@@ -1,24 +1,21 @@
 angular.module('underscore', [])
-.factory('_', function() {
-  return window._; // assumes underscore has already been loaded on the page
+    .factory('_', function() {
+    return window._; // assumes underscore has already been loaded on the page
 });
-
 angular.module('starter', ['ionic','ngCordova', 'starter.controllers','underscore','ngResource','ngAnimate'])
-
 .run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-      cordova.plugins.Keyboard.disableScroll(true);
-
-    }
-    if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
-  });
+    $ionicPlatform.ready(function() {
+        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+        // for form inputs)
+        if (window.cordova && window.cordova.plugins.Keyboard) {
+            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+            cordova.plugins.Keyboard.disableScroll(true);
+        }
+        if (window.StatusBar) {
+            // org.apache.cordova.statusbar required
+            StatusBar.styleDefault();
+        }
+    });
 })
 
 .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
@@ -99,15 +96,105 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','underscor
                 controller:'tiposdeCancerCtrl'
             }
         }
-    })   
+    })     
+    .state('app.tiposdeCancerLeucenia', {
+        url: '/tiposdeCancerLeucenia',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tipos_cancer/tc_leucenia.html',
+                controller:'tiposdeCancerLeuceniaCtrl'
+            }
+        }
+    }) 
+    .state('app.tiposdeCancerLinfoma', {
+        url: '/tiposdeCancerLinfoma',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tipos_cancer/tc_linfoma.html',
+                controller:'tiposdeCancerLinfomaCtrl'
+            }
+        }
+    }) 
     .state('app.tiposdeCancerSarcoma', {
         url: '/tiposdeCancerSarcoma',
         views: {
             'menuContent': {
-                templateUrl: 'templates/prin_tiposdecancer_sarcomas.html',
+                templateUrl: 'templates/tipos_cancer/tc_sarcomas.html',
                 controller:'tiposdeCancerSarcomaCtrl'
             }
         }
+    })   
+    .state('app.tiposdeCancerTumoresdeHigado', {
+        url: '/tiposdeCancerTumoresdeHigado',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tipos_cancer/tc_tumoresdehigado.html',
+                controller:'tiposdeCancerTumoresdeHigadoCtrl'
+            }
+        }
     })  
+    .state('app.tiposdeCancerTumoresdelSN', {
+        url: '/tiposdeCancerTumoresdelSN',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tipos_cancer/tc_tumoresdelsistemanervioso.html',
+                controller:'tiposdeCancerTumoresdelSNCtrl'
+            }
+        }
+    }) 
+    .state('app.tiposdeCancerTumoresdeWils', {
+        url: '/tiposdeCancerTumoresdeWils',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tipos_cancer/tc_tumoresdewils.html',
+                controller:'tiposdeCancerTumoresdeWilsCtrl'
+            }
+        }
+    }) 
+    .state('app.tiposdeCancerTumoresGerminales', {
+        url: '/tiposdeCancerTumoresGerminales',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tipos_cancer/tc_tumoresgerminales.html',
+                controller:'tiposdeCancerTumoresGerminalesCtrl'
+            }
+        }
+    })
+    .state('app.tiposdeCancerTumoresNeuroblastoma', {
+        url: '/tiposdeCancerTumoresNeuroblastoma',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tipos_cancer/tc_tumoresneuroblastoma.html',
+                controller:'tiposdeCancerTumoresNeuroblastomaCtrl'
+            }
+        }
+    })
+    .state('app.tiposdeCancerTumoresNeuroblastoma', {
+        url: '/tiposdeCancerTumoresNeuroblastoma',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tipos_cancer/tc_tumoresneuroblastoma.html',
+                controller:'tiposdeCancerTumoresNeuroblastomaCtrl'
+            }
+        }
+    })
+    .state('app.tiposdeCancerTumoresOseos', {
+        url: '/tiposdeCancerTumoresOseos',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tipos_cancer/tc_tumoresoseos.html',
+                controller:'tiposdeCancerTumoresOseosCtrl'
+            }
+        }
+    })
+    .state('app.tiposdeCancerTumoresRetinoblastoma', {
+        url: '/tiposdeCancerTumoresRetinoblastoma',
+        views: {
+            'menuContent': {
+                templateUrl: 'templates/tipos_cancer/tc_tumoresretinoblastoma.html',
+                controller:'tiposdeCancerTumoresRetinoblastomaCtrl'
+            }
+        }
+    })
     $urlRouterProvider.otherwise('home');
 });
