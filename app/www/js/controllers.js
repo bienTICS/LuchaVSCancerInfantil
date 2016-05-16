@@ -23,7 +23,58 @@ angular.module('starter.controllers', [])
 .controller('tiposdeCancerCtrl',function ($scope,$http){
     
 })
+.controller('tiposdeCancerLeuceniaCtrl',function ($scope,$http){
+    
+})
+.controller('queeselCancerCtrl',function ($scope,$http){
+    
+})
+.controller('frecuenciadelcancerCtrl',function ($scope,$http){
+    
+})
+.controller('signoysintomasdelcancerCtrl',function ($scope,$http){
+    
+})
+.controller('medidaspreventivasCtrl',function ($scope,$http){
+    
+})
+.controller('situamigotienecancerCtrl',function ($scope,$http){
+    
+})
+.controller('diccionarioCtrl',function ($scope,$http){
+    
+})
+.controller('reddeapoyoCtrl',function ($scope,$http){
+    
+})
+.controller('directoriooscCtrl',function ($scope,$http){
+    
+})
+.controller('tiposdeCancerLinfomaCtrl',function ($scope,$http){
+    
+})
 .controller('tiposdeCancerSarcomaCtrl',function ($scope,$http){
+    
+})
+.controller('tiposdeCancerTumoresdeHigadoCtrl',function ($scope,$http){
+    
+})
+.controller('tiposdeCancerTumoresdelSNCtrl',function ($scope,$http){
+    
+})
+.controller('tiposdeCancerTumoresdeWilsCtrl',function ($scope,$http){
+    
+})
+.controller('tiposdeCancerTumoresGerminalesCtrl',function ($scope,$http){
+    
+})
+.controller('tiposdeCancerTumoresNeuroblastomaCtrl',function ($scope,$http){
+    
+})
+.controller('tiposdeCancerTumoresOseosCtrl',function ($scope,$http){
+    
+})
+.controller('tiposdeCancerTumoresRetinoblastomaCtrl',function ($scope,$http){
     
 })
 .controller('homeCtrl',function ($ionicModal,$scope){

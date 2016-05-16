@@ -88,6 +88,78 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','underscor
             }
         }
     })
+    .state('app.queeselCancer', {
+        url: '/queeselCancer',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_queeselcancer.html',
+                controller:'queeselCancerCtrl'
+            }
+        }
+    })
+    .state('app.frecuenciadelcancer', {
+        url: '/frecuenciadelcancer',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_frecuenciadelcancer.html',
+                controller:'frecuenciadelcancerCtrl'
+            }
+        }
+    })
+    .state('app.signoysintomasdelcancer', {
+        url: '/signoysintomasdelcancer',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_signosysintomas.html',
+                controller:'signoysintomasdelcancerCtrl'
+            }
+        }
+    })
+    .state('app.medidaspreventivas', {
+        url: '/medidaspreventivas',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_medidaspreventivas.html',
+                controller:'medidaspreventivasCtrl'
+            }
+        }
+    })
+    .state('app.situamigotienecancer', {
+        url: '/situamigotienecancer',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_situamigotienecancer.html',
+                controller:'situamigotienecancerCtrl'
+            }
+        }
+    })
+    .state('app.diccionario', {
+        url: '/diccionario',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_diccionario.html',
+                controller:'diccionarioCtrl'
+            }
+        }
+    })
+    .state('app.reddeapoyo', {
+        url: '/reddeapoyo',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_reddeapoyo.html',
+                controller:'reddeapoyoCtrl'
+            }
+        }
+    })
+    .state('app.directorioosc', {
+        url: '/directorioosc',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_directorio_osc.html',
+                controller:'directoriooscCtrl'
+            }
+        }
+    })
     .state('app.tiposdeCancer', {
         url: '/tiposdeCancer',
         views: {
@@ -157,15 +229,6 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','underscor
             'menuContent': {
                 templateUrl: 'templates/tipos_cancer/tc_tumoresgerminales.html',
                 controller:'tiposdeCancerTumoresGerminalesCtrl'
-            }
-        }
-    })
-    .state('app.tiposdeCancerTumoresNeuroblastoma', {
-        url: '/tiposdeCancerTumoresNeuroblastoma',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/tipos_cancer/tc_tumoresneuroblastoma.html',
-                controller:'tiposdeCancerTumoresNeuroblastomaCtrl'
             }
         }
     })
