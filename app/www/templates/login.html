@@ -3,8 +3,8 @@
         <h4 class="title text-center " style="color: white;font-weight: 100;font-size: 11px;">
                 Derechos reservados 2016 | Desarrollado por bienTICS
         </h4>
-      <div class="button button-clear text-white pull-right no-border"  ng-click="modal.hide()">
-          <i class="fa fa-times color-white" aria-hidden="true"></i>
+      <div class="button button-clear color-white pull-right no-border"  ng-click="modal.hide()">
+          <i class="ion-ios-close-empty color-white" aria-hidden="true"></i>
       </div>
     </header>
     <ion-content>
@@ -15,32 +15,37 @@
                         <i class="icon ion-ios-person-outline color-white"></i>
                         <input type="text" placeholder="Usuario" class="font-vpm input-back txt-user-login color-white" required="">
                     </label>
-
                     <label class="item item-input input-login" style="margin-top: 10px">
                         <i class="icon ion-ios-unlocked-outline placeholder-icon color-white"></i>
-                        <input type="password" placeholder="Contraseña" class="font-vpm input-back color-white txt-pass-login" required="">
-                    </label>
-                    <label class="item  no-border" style="margin-top: 20px;background: transparent;padding: 0px!important">
-                        <button type="submit" ng-click="modal.hide()" ui-sref="app.principalPublico" class="button background-vpm font-vpm " style="width: 100%">Accesar</button>
+                        <input type="password" placeholder="Contraseña" class="font-vpm input-back  color-white" required="">
                     </label>
                 </div>
+                <center>
+                    <button type="submit" ng-click="modal.hide()" ui-sref="app.principalPublico" class="button btn-login-accesar button-small ">Accesar</button>
+                </center>
+                <center>
+                    <br>
+                    <button type="submit" ng-click="modal.hide()" ui-sref="app.principalPublico" class="button btn-login-accesar button-small ">Usuario Anónimo</button>
+                </center>
             </div>
         </form>   
-        <div class="row " style="margin-top: 0px;padding: 27px">
+        <center>
+        <div class="row hide" style="margin-top: 0px;">
             <hr class="hr">
             <div class="col col-50">
                 <a href="" ng-click="loginFacebook()">
-                    <img src="img/login/i-facebook.png" style="width: 100%">
+                    <img src="img/login/i-facebook.png" style="width: 140px;height: 30px">
                 </a>
             </div>
             <div class="col col-50">
                 <a href="" ng-click="googleSignIn()">
-                    <img src="img/login/i-google.png" style="width: 100%">
+                    <img src="img/login/i-google.png" style="width: 140px;height: 30px">
                 </a>
             </div>
         </div>
+        </center>
     </ion-content>
-    <ion-footer-bar align-title="left" class="background-vpm">
-        <button class="button button-clear button-block  font-vpm color-white" style="top: -10px!important;font-size: 20px" >No tienes una cuenta? Regístrate</button>
+    <ion-footer-bar align-title="left" class="background-imss">
+        <button class="button button-clear button-block  font-tcc color-white" style="top: -10px!important;font-size: 15px" >No tienes una cuenta? Regístrate</button>
     </ion-footer-bar>
 </ion-view>

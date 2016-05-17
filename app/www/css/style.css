@@ -1,4 +1,5 @@
 /* Empty. Add your own CSS if you like */
+@font-face{font-family:"tcc";src:url("EsmeraldaPro.otf");}
 .text-center{
     text-align: center!important;
 }
@@ -20,4 +21,46 @@
 }
 .color-imss{
     color: #256659!important;
+}
+.border-left{
+    border-left: 1px solid white;
+}
+.border-right{
+    border-right: 1px solid white;
+}
+.back-transparent{
+    background: transparent!important;
+}
+.input-login{ 
+    font-family: tcc;
+    background: transparent;; 
+    padding-left: 7px;
+    border-left: 1px;
+    border-top: 1px;
+    border-right: 1px;
+    padding-right: 7px;
+    color: white!important;
+}
+.input-login ::-webkit-input-placeholder {
+   color: white!important;  
+   font-family: inherit;
+   font-family: tcc;
+}
+.color-white{
+    color: white!important;
+}
+.black{
+    color: black!important;
+}
+.btn-login-accesar{
+    font-family: tcc;
+    width: 93%;
+    height: 30px!important;
+    color: white;
+    padding-bottom: 5px;
+    border: transparent;
+    background: #256659!important;
+}
+.font-tcc{
+    font-family: tcc;
 }
