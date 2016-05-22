@@ -39,6 +39,18 @@ class Api extends MX_Controller{
         }
         $this->setOutput($json); 
     }
+    public function api_diccionarios() {
+        $this->setOutput($this->api_mdl->_get_data('c_diccionarios'));
+    }
+    public function api_diccionario() {
+        $this->setOutput($this->api_mdl->_get_data_condition('c_diccionarios',array('diccionario_id'=>  $this->input->get_post('id'))));
+    }
+    public function api_get_umas() {
+        $this->setOutput($this->api_mdl->_get_umas());
+    }
+    public function api_get_osc() {
+        $this->setOutput($this->api_mdl->_get_osc());
+    }
     public function setOutput($json) {
         $this->output->set_content_type('application/json')->set_output(json_encode($json));
     }     

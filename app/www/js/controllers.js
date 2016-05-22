@@ -101,17 +101,69 @@ angular.module('starter.controllers', [])
 .controller('situamigotienecancerCtrl',function ($scope,$http){
     
 })
-.controller('diccionarioCtrl',function ($scope,$http){
-    
+.controller('diccionarioCtrl',function ($scope,$http,$ionicLoading,URL_API){
+    $ionicLoading.show({})
+    $http.get(URL_API+'api_diccionarios')
+    .success(function(res){
+        $ionicLoading.hide()
+        $scope.diccionarios=res;
+    }).error(function (error){
+        
+    })
+})
+.controller('diccionarioverCtrl',function ($scope,$http,$ionicLoading,URL_API,$stateParams){
+    $ionicLoading.show({})
+    $http.get(URL_API+'api_diccionarios')
+    .success(function(res){
+        $ionicLoading.hide()
+        
+        $scope.dic=_.find(res,{diccionario_id:$stateParams.id});
+    }).error(function (error){
+        
+    })
 })
 .controller('reddeapoyoCtrl',function ($scope,$http){
     
 })
-.controller('directorioucCtrl',function ($scope,$http){
-    
+.controller('directorioucCtrl',function ($scope,$http,$ionicLoading,URL_API){
+    $ionicLoading.show({})
+    $http.get(URL_API+'api_get_umas')
+    .success(function(res){
+        $ionicLoading.hide()
+        $scope.umas=res;
+    }).error(function (error){
+        
+    })
 })
-.controller('directoriooscCtrl',function ($scope,$http){
-    
+.controller('directorioUMACtrl',function ($stateParams,$scope,$http,$ionicLoading,URL_API){
+    $ionicLoading.show({})
+    $http.get(URL_API+'api_get_umas')
+    .success(function(res){
+        $ionicLoading.hide()
+        $scope.uma=_.find(res,{directorio_id:$stateParams.id});
+    }).error(function (error){
+        
+    })
+})
+.controller('directoriooscCtrl',function ($scope,$http,$ionicLoading,URL_API){
+    $ionicLoading.show({})
+    $http.get(URL_API+'api_get_osc')
+    .success(function(res){
+        $ionicLoading.hide()
+        $scope.osc=res;
+    }).error(function (error){
+        
+    })
+})
+.controller('directorioOSCCtrl',function ($scope,$http,$ionicLoading,URL_API,$stateParams){
+    $ionicLoading.show({})
+    $http.get(URL_API+'api_get_osc')
+    .success(function(res){
+        $ionicLoading.hide()
+        $scope.osc=_.find(res,{osc_id:$stateParams.id});
+    }).error(function (error){
+        
+    })
 })
 .controller('tiposdeCancerLinfomaCtrl',function ($scope,$http){
     

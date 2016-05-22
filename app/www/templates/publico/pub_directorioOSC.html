@@ -1,0 +1,30 @@
+<ion-view view-title="Directorio OSC">
+    <ion-content>
+        <div class="card">
+            <div class="item item-divider item-text-wrap">
+            {{osc.osc_organizacion}} 
+            </div>     
+        </div>
+        <div class="card">
+            <div class="item item-divider item-text-wrap">Teléfonos & Fax & Sitio Web</div>
+            <div class="item item-text-wrap text-justify">
+                {{osc.osc_telefono}}
+            </div>
+            <div class="item item-text-wrap text-justify">
+                {{osc.osc_sitioweb}}
+            </div>
+            <div class="item item-divider item-text-wrap">Estado</div>
+            <div class="item item-text-wrap text-justify">
+                {{osc.estado_nombre}}
+            </div>
+            <div class="item item-divider item-text-wrap">Dirección</div>
+            <div class="item item-text-wrap text-justify">
+                {{osc.osc_direccion}}
+            </div>
+            <div class="item item-divider item-text-wrap">Servicios</div>
+            <div class="item item-text-wrap text-justify">
+                {{osc.osc_servicios}}
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

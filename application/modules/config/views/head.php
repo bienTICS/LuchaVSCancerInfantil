@@ -71,10 +71,134 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a md-ink-ripple href="<?=  base_url()?>inicio/direcctorio_ua">
+                                                    <a md-ink-ripple href="<?=  base_url()?>inicio/directorio_uma">
                                                         <i class="icon fa fa-medkit i-20"></i>
-                                                        <span class="font-normal color-white" style="margin-left: -15px;">Directorio de UA</span>
+                                                        <span class="font-normal color-white" style="margin-left: -15px;">Directorio UMA</span>
                                                     </a>
+                                                </li>
+                                                <li>
+                                                    <a md-ink-ripple href="<?=  base_url()?>inicio/directorio_osc">
+                                                        <i class="icon fa fa-medkit i-20"></i>
+                                                        <span class="font-normal color-white" style="margin-left: -15px;">Directorio OSC</span>
+                                                    </a>
+                                                </li>
+                                                <li >
+                                                    <a md-ink-ripple="" href="" class=" waves-effect">
+                                                        <span class="pull-right text-muted">
+                                                            <i class="fa fa-caret-down"></i>
+                                                        </span>
+                                                        <i class="icon fa fa-users i-20"></i>
+                                                        <span style="margin-left: -15px;">Padres de familia</span>
+                                                    </a>
+                                                    <ul class="nav nav-sub" style="display: block;">
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Videos</a>
+                                                        </li>   
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Redes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Test</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Blog</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li >
+                                                    <a md-ink-ripple="" href="" class=" waves-effect">
+                                                        <span class="pull-right text-muted">
+                                                            <i class="fa fa-caret-down"></i>
+                                                        </span>
+                                                        <i class="icon fa fa-male i-20"></i>
+                                                        <span style="margin-left: -15px;">Adolecentes</span>
+                                                    </a>
+                                                    <ul class="nav nav-sub" style="display: block;">
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Videos</a>
+                                                        </li>   
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Redes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Test</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Blog</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li >
+                                                    <a md-ink-ripple="" href="" class=" waves-effect">
+                                                        <span class="pull-right text-muted">
+                                                            <i class="fa fa-caret-down"></i>
+                                                        </span>
+                                                        <i class="icon fa fa-building i-20"></i>
+                                                        <span style="margin-left: -15px;">Escuela/Maestro</span>
+                                                    </a>
+                                                    <ul class="nav nav-sub" style="display: block;">
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Videos</a>
+                                                        </li>   
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Redes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Test</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Blog</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li >
+                                                    <a md-ink-ripple="" href="" class=" waves-effect">
+                                                        <span class="pull-right text-muted">
+                                                            <i class="fa fa-caret-down"></i>
+                                                        </span>
+                                                        <i class="icon fa fa-wheelchair i-20"></i>
+                                                        <span style="margin-left: -15px;">Paciente</span>
+                                                    </a>
+                                                    <ul class="nav nav-sub" style="display: block;">
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Orientación</a>
+                                                        </li>   
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Cuando me acaban de dar la noticia</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Tipos de tratamiento</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Recomendaciones</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Ligas de apoyo</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li >
+                                                    <a md-ink-ripple="" href="" class=" waves-effect">
+                                                        <span class="pull-right text-muted">
+                                                            <i class="fa fa-caret-down"></i>
+                                                        </span>
+                                                        <i class="icon fa fa-user-md i-20"></i>
+                                                        <span style="margin-left: -15px;">Médico.</span>
+                                                    </a>
+                                                    <ul class="nav nav-sub" style="display: block;">
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Videos</a>
+                                                        </li>   
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Redes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Test</a>
+                                                        </li>
+                                                        <li>
+                                                            <a md-ink-ripple="" href="" class=" waves-effect">Blog</a>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                             </ul>
                                         </nav>

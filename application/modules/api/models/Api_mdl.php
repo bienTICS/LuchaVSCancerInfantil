@@ -39,4 +39,16 @@ class Api_mdl extends CI_Model{
                 ->get('c_usuarios, c_roles')
                 ->result_array();
     }
+    public function _get_umas() {
+        return $this->db
+                ->where('c_directorio_uma.estado_id=c_estados.estado_id')
+                ->get('c_directorio_uma,c_estados')
+                ->result_array();
+    }
+    public function _get_osc() {
+        return $this->db
+                ->where('c_directorios_osc.estado_id=c_estados.estado_id')
+                ->get('c_directorios_osc,c_estados')
+                ->result_array();
+    }
 }

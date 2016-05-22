@@ -1,5 +1,18 @@
 <ion-view view-title="Diccionario">
-    <ion-content>
-        
+    <div class="bar bar-subheader item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" placeholder="Buscar..." ng-model="buscar_palabra">
+        </label>
+    </div>  
+    <ion-content class="has-subheader">
+        <div class="list">
+            <div ng-repeat="dic in diccionarios | filter : buscar_palabra">
+                <a class="item item-icon-right" href="#/app/diccionariover/{{dic.diccionario_id}}">
+                    {{dic.diccionario_palabra}}
+                    <i class="icon ion-ios-arrow-right"></i>
+                </a>
+            </div>
+        </div>
     </ion-content>
 </ion-view>

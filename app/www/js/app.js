@@ -141,6 +141,15 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','starter.c
             }
         }
     })
+    .state('app.diccionariover', {
+        url: '/diccionariover/:id',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_diccionariover.html',
+                controller:'diccionarioverCtrl'
+            }
+        }
+    })
     .state('app.reddeapoyo', {
         url: '/reddeapoyo',
         views: {
@@ -159,12 +168,30 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','starter.c
             }
         }
     })
+    .state('app.directorioUMA', {
+        url: '/directorioUMA/:id',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_directorioUMA.html',
+                controller:'directorioUMACtrl'
+            }
+        }
+    })
     .state('app.directorioosc', {
         url: '/directorioosc',
         views: {
             'menuContent': {
                 templateUrl:'templates/publico/pub_directorio_osc.html',
                 controller:'directoriooscCtrl'
+            }
+        }
+    })
+    .state('app.directorioOSC', {
+        url: '/directorioOSC/:id',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_directorioOSC.html',
+                controller:'directorioOSCCtrl'
             }
         }
     })
