@@ -17,4 +17,29 @@ class Inicio extends Config{
     public function index() {
         $this->load->view('inicio_index');
     }
+    public function diccionarios() {
+        $sql['Gestion']=  $this->config_mdl->_get_data('c_diccionarios');
+        $this->load->view('inicio_diccionarios',$sql);
+    }
+    public function insert_diccionario() {
+        $data=array(
+            'diccionario_palabra'=>  $this->input->post('diccionario_palabra'),
+            'diccionario_descripcion'=>  $this->input->post('diccionario_descripcion')
+        );
+        if($this->config_mdl->_insert('c_diccionarios',$data)){
+            $this->setOutput(array('accion'=>'1'));
+        }else{
+            $this->setOutput(array('accion'=>'2'));
+        }
+    }
+    public function eliminar_diccionario() {
+        if($this->config_mdl->_delete_data('c_diccionarios',array('diccionario_id'=>  $this->input->post('id')))){
+            $this->setOutput(array('accion'=>'1'));
+        }else{
+            $this->setOutput(array('accion'=>'2'));
+        }
+    }
+    public function direcctorio_ua() {
+        
+    }
 }

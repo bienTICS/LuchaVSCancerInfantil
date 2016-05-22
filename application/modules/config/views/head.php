@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>UMAE</title>
+        <title>TODOS vs Cáncer infantil.</title>
         <meta name="description" content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <link href="<?=  base_url()?>assets/libs/assets/animate.css/animate.css" rel="stylesheet" type="text/css" />
@@ -36,7 +36,7 @@
                 <div class="left ">
                     <div class="box back-imss">
                         <div class="navbar md-whiteframe-z1 waves-effect no-radius blue text-center  back-imss-all "  style="padding:9px;width: 100%">
-                            <span class="h2 " style="font-weight: bold;font-size: 22px;">Todos Contra el Cáncer</span>
+                            <span class="h2 " style="font-weight: bold;font-size: 22px;">TODOS vs Cáncer infantil.</span>
                             <!-- / brand -->
                         </div>
                         <div class="box-row">
@@ -64,7 +64,18 @@
                                                         <span class="font-normal color-white" style="margin-left: -15px;">Inicio</span>
                                                     </a>
                                                 </li>
-                                                
+                                                <li>
+                                                    <a md-ink-ripple href="<?=  base_url()?>inicio/diccionarios">
+                                                        <i class="icon fa fa-book i-20"></i>
+                                                        <span class="font-normal color-white" style="margin-left: -15px;">Diccionarios</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a md-ink-ripple href="<?=  base_url()?>inicio/direcctorio_ua">
+                                                        <i class="icon fa fa-medkit i-20"></i>
+                                                        <span class="font-normal color-white" style="margin-left: -15px;">Directorio de UA</span>
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </nav>
                                     </div>

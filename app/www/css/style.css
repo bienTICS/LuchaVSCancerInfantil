@@ -64,3 +64,36 @@
 .font-tcc{
     font-family: tcc;
 }
+.title-menu-left{
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    left: 0px;
+    top: 50px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family: tcc;
+    background: rgba(54, 25, 25, .5); 
+}
+.content-menu-ctt{
+    background: white!important;
+}
+.no-border-menu{
+        border: 1px solid transparent;
+}
+.hidden{
+    display: none!important;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}

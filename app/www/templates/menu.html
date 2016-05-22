@@ -5,21 +5,26 @@
             <ion-nav-buttons side="left">
                 <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
             </ion-nav-buttons>
-            <ion-nav-buttons side="right">
-                <button class="button button-icon button-clear ion-android-more-vertical" menu-toggle="right"></button>
+            <ion-nav-buttons side="right" class="hidden">
+                <button class="hidden button button-icon button-clear ion-android-more-vertical" menu-toggle="right"></button>
             </ion-nav-buttons>
         </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
     </ion-side-menu-content>
     
     <ion-side-menu side="left" expose-aside-when="large" class="no-boder-menu">
-        <ion-content class="content-menu-pm no-boder-menu" >
+        <ion-content class="content-menu-ctt no-boder-menu">
             <div class="list menu-content-vpm " >
-                <a class="item item-icon-left no-boder-menu font-vpm">
-                    <i class="icon ion-ios-locked-outline font-vpm"></i>Cerrar sesión
+                <a class="item item-icon-left no-boder-menu font-vpm" style="background: url(img/background.jpg);background-size: cover;height: 150px;background-position: center">
+                    <div class="title-menu-left">
+                        TODOS vs Cáncer infantil
+                    </div>
                 </a> 
-                <a class="item item-icon-left no-boder-menu font-vpm">
-                    <i class="icon ion-log-out font-vpm"></i>Salir
+                <a class="item item-icon-left no-border-menu font-tcc" ng-controller="CerrarSesion" ng-click="CerrarSesion()">
+                    <i class="icon ion-ios-locked-outline font-tcc"></i>Cerrar sesión
+                </a> 
+                <a class="item item-icon-left no-border-menu font-tcc">
+                    <i class="icon ion-log-out font-tcc"></i>Salir
                 </a> 
             </div>
         </ion-content>

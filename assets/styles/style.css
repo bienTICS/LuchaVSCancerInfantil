@@ -13,3 +13,9 @@ and open the template in the editor.
 .no-text-transform{
     text-transform: none!important;
 }
+.pointer{
+    cursor: pointer;
+}
+.icono-accion{
+    font-size: 23px;
+}

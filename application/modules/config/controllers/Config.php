@@ -18,6 +18,7 @@ class Config extends MX_Controller{
         if(!isset($_SESSION['idUser']) && $this->uri->segment(1, 0)!='login'){
             redirect('login');
         }
+        $this->load->model('config/config_mdl');
     }
 
     public function get_head() {

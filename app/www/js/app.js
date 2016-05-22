@@ -2,7 +2,7 @@ angular.module('underscore', [])
     .factory('_', function() {
     return window._; // assumes underscore has already been loaded on the page
 });
-angular.module('starter', ['ionic','ngCordova', 'starter.controllers','underscore','ngResource','ngAnimate'])
+angular.module('starter', ['ionic','ngCordova', 'starter.controllers','starter.config','starter.services','underscore','ngResource','ngAnimate'])
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -30,8 +30,7 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','underscor
     .state('app', {
         url: '/app',
         abstract: true,
-        templateUrl: 'templates/menu.html',
-        controller: 'AppCtrl'
+        templateUrl: 'templates/menu.html'
     })
 
     .state('app.principalPublico', {
@@ -148,6 +147,15 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','underscor
             'menuContent': {
                 templateUrl:'templates/publico/pub_reddeapoyo.html',
                 controller:'reddeapoyoCtrl'
+            }
+        }
+    })
+    .state('app.directoriouc', {
+        url: '/directoriouc',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/publico/pub_directoriounidades.html',
+                controller:'directorioucCtrl'
             }
         }
     })

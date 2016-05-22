@@ -1,6 +1,66 @@
 angular.module('starter.controllers', [])
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('CerrarSesion',function($ionicHistory,$scope,$state,Login,$ionicLoading){
+    $scope.CerrarSesion=function (){
+        $ionicLoading.show({})
+        $ionicLoading.hide()
+        $ionicHistory.clearCache();
+        $ionicHistory.clearHistory();
+        $state.go('home');
+    }
+})
+.controller('homeCtrl', function($scope, $ionicModal, $timeout,Login,$state,$ionicPopup,$ionicLoading,URL_API,$http) {
+    $('body').on('submit','.form-login',function (e){
+        e.preventDefault();
+        $ionicLoading.show({})
+        $http({
+            url: URL_API+'api_login',
+            method: "POST",
+            data: {'user':$('body .txt-user').val(),'pass':$('body .txt-pass').val()}
+            ,headers: {
+                'Content-type': "application/x-www-form-urlencoded; charset=UTF-8"
+            }
+        }).success(function(res){                
+            $('.form-login')[0].reset();
+            switch (res.accion){
+                case '1':
+                    Login.setUser({name: res.msj,id_token:res.id_token,rol_token:res.rol_token});
+                    if(res.rol_token=='1'){
+                        $state.go('app.principalPublico');
+                    }else if(res.rol_token=='2'){
+                        $state.go('app.principalPublico');
+                    }else if(res.rol_token=='3'){
+                        $state.go('app.principalAdolecente');
+                    }else if(res.rol_token=='4'){
+                        $state.go('app.principalEscuela');
+                    }else if(res.rol_token=='5'){
+                        $state.go('app.principalPaciente');
+                    }else if(res.rol_token=='6'){
+                        $state.go('app.principalMedico');
+                    }else if(res.rol_token=='7'){
+                        $state.go('app.principalPadredeFamilia');
+                    }
+                    $scope.modal.hide();
+                    break;
+                case '2':
+                    $ionicPopup.alert({title:res.msj})
+                    break;
+            }
+            $ionicLoading.hide()
 
+        }).error(function(error){
+
+        })
+
+    });
+    //ui-sref="app.inicio({id:result_search})"
+    $ionicModal.fromTemplateUrl('templates/login.html', function($ionicModal) {
+        $scope.modal = $ionicModal; 
+    }, {
+        // Use our scope for the scope of the modal to keep it simple
+        scope: $scope,
+        // The animation we want to use for the modal entrance
+        animation: 'slide-in-up'
+    }); 
 })
 .controller('principalPublicoCtrl', function($http,$scope,$ionicPopup) {
 
@@ -47,6 +107,9 @@ angular.module('starter.controllers', [])
 .controller('reddeapoyoCtrl',function ($scope,$http){
     
 })
+.controller('directorioucCtrl',function ($scope,$http){
+    
+})
 .controller('directoriooscCtrl',function ($scope,$http){
     
 })
@@ -76,17 +139,6 @@ angular.module('starter.controllers', [])
 })
 .controller('tiposdeCancerTumoresRetinoblastomaCtrl',function ($scope,$http){
     
-})
-.controller('homeCtrl',function ($ionicModal,$scope){
-        //ui-sref="app.inicio({id:result_search})"
-        $ionicModal.fromTemplateUrl('templates/login.html', function($ionicModal) {
-            $scope.modal = $ionicModal; 
-        }, {
-            // Use our scope for the scope of the modal to keep it simple
-            scope: $scope,
-            // The animation we want to use for the modal entrance
-            animation: 'slide-in-up'
-        }); 
 })
 .controller('showMenu',function ($scope,$ionicPopover){
     $ionicPopover.fromTemplateUrl('templates/popover.html', {
