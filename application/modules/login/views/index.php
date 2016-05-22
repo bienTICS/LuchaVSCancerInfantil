@@ -55,9 +55,12 @@
                         <button md-ink-ripple type="submit" class="md-btn md-raised pink btn-block p-h-md no-text-transform">Acceder</button>
                     </form>
                 </div>
-                <div class="p-v-lg text-center hidden">
-                    <div class="m-b"><button ui-sref="access.forgot-password" class="md-btn">Forgot password?</button></div>
-                    <div>Do not have an account? <button ui-sref="access.signup" class="md-btn">Create an account</button></div>
+                <div class="p-v-lg text-center ">
+                    <div class="m-b">
+                        <a href="<?=  base_url()?>app/www">
+                            <button md-ink-ripple="" class="md-btn md-raised m-b btn-fw blue waves-effect">Ver app</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
