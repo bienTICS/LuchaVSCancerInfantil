@@ -57,7 +57,7 @@
                 </div>
                 <div class="p-v-lg text-center ">
                     <div class="m-b">
-                        <a href="<?=  base_url()?>app/www">
+                        <a href="<?=  base_url()?>app">
                             <button md-ink-ripple="" class="md-btn md-raised m-b btn-fw blue waves-effect">Ver app</button>
                         </a>
                     </div>
