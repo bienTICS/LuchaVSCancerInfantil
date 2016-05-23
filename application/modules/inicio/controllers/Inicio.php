@@ -75,7 +75,7 @@ class Inicio extends Config{
                 $this->setOutput(array('accion'=>'2'));
             }
         }else{
-            if($this->config_mdl->_update_data('c_directorio_uma',$data,array('directorio_id'=>  $this->input->post('jtf_id')))){
+            if($this->config_mdl->_update_data('c_directorio_uma',$data,array('directorio_id'=>  $this->input->post('directorio_id')))){
                 $this->setOutput(array('accion'=>'1'));
             }else{
                 $this->setOutput(array('accion'=>'2'));
@@ -87,7 +87,8 @@ class Inicio extends Config{
         $this->load->view('inicio_directorio_osc',$sql);
     }
     public function agregar_osc() {
-        $this->load->view('inicio_directorio_osc_agregar');
+        $sql['osc']=  $this->config_mdl->_get_data_condition('c_directorios_osc',array('osc_id'=>  $this->input->get_post('osc')));
+        $this->load->view('inicio_directorio_osc_agregar',$sql);
     }
     public function insert_osc() {
         $data=array(

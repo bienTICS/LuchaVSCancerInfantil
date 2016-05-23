@@ -40,6 +40,9 @@
                                         <td><?=$value['osc_sitioweb']?></td>
                                         <td><?=$value['estado_nombre']?></td>
                                         <td class="text-center">
+                                            <a href="<?=  base_url()?>inicio/agregar_osc?a=edit&osc=<?=$value['osc_id']?>">
+                                                <i class="fa fa-pencil icono-accion"></i>
+                                            </a>&nbsp;
                                             <i class="fa fa-trash-o pointer icono-accion" data-id="<?=$value['osc_id']?>"></i>
                                         </td>
                                     </tr>

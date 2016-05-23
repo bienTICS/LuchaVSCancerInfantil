@@ -41,8 +41,8 @@
                         </div>
                         <div class="box-row">
                             <div class="box-cell scrollable ">
-                                <div class="box-inner ">
-                                    <div class="p hidden-folded blue-50 text-center back-imss" >
+                                <div class="box-inner " >
+                                    <div class="p hidden-folded blue-50 text-center " style="background: #FFF8E1;">
                                         <div class="rounded bg-white inline pos-rlt" style="width: 120px;height: 120px">
                                             <center>
                                             <img src="<?=  base_url()?>assets/img/perfiles/<?=$info[0]['usuario_perfil']?>" class="img-responsive rounded" style="background-size: cover;width: 100%;margin-top: 0px">
