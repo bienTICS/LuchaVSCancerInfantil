@@ -129,7 +129,7 @@
         <div class="clear"></div>
         <div class="dev">
             <center>
-            <img src="demo/img/dev/not3.png" style="width: 300px;margin-top: 10px;;z-index: 100000000">
+            <img src="demo/img/dev/not3.png" style="width: 300px;margin-top: 12px;;z-index: 100000000">
             </center>
             <div class="bar-clear"></div>
         </div>
