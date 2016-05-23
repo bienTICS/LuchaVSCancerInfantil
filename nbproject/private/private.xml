@@ -2,13 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/LuchaVSCancerInfantil/assets/styles/style.css</file>
-            <file>file:/C:/xampp/htdocs/LuchaVSCancerInfantil/application/modules/inicio/views/inicio_diccionarios.php</file>
-            <file>file:/C:/xampp/htdocs/LuchaVSCancerInfantil/application/modules/inicio/controllers/Inicio.php</file>
-            <file>file:/C:/xampp/htdocs/LuchaVSCancerInfantil/application/modules/config/views/head.php</file>
-            <file>file:/C:/xampp/htdocs/LuchaVSCancerInfantil/application/modules/inicio/views/inicio_index.php</file>
-            <file>file:/C:/xampp/htdocs/LuchaVSCancerInfantil/assets/js/tcc_diccionarios.js</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
