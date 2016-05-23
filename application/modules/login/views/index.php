@@ -52,7 +52,7 @@
                                 <input type="checkbox"><i class="indigo"></i> Recordarme
                             </label>
                         </div>
-                        <button md-ink-ripple type="submit" class="md-btn md-raised pink btn-block p-h-md no-text-transform">Acceder</button>
+                        <button md-ink-ripple type="submit" class="md-btn md-raised back-tcc btn-block p-h-md no-text-transform">Acceder</button>
                     </form>
                 </div>
                 <div class="p-v-lg text-center ">

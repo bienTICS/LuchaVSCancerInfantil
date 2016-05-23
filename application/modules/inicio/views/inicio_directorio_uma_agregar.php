@@ -4,8 +4,8 @@
         <div class="col-md-6 col-md-offset-3">
         <div class="box-inner padding ">
             <div class="panel panel-default">
-                <div class="panel-heading"> 
-                    Agregar UMA
+                <div class="panel-heading back-tcc"> 
+                    <strong>Agregar UMA</strong>
                 </div>
                 <div class="panel-body b-b b-light">
                     <form class="form-uma">
@@ -50,7 +50,7 @@
                             <div class="md-form-group" style="margin-top:-10px">
                                 <input type="hidden" name="jtf_accion" value="<?=$_GET['a']?>">
                                 <input type="hidden" name="jtf_id" value="<?=$_GET['uma']?>">
-                                <button type="submit" class="md-btn md-raised m-b btn-fw blue waves-effect pull-right">Guardar</button>
+                                <button type="submit" class="md-btn md-raised m-b btn-fw back-tcc waves-effect pull-right">Guardar</button>
                             </div>
                         </div>
                     </div>

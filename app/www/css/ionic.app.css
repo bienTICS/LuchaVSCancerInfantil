@@ -7690,9 +7690,10 @@ a.button {
 
 * {
   color: #444444; }
+/*Cambios*/
 /*colorheader*/
 .bar.app-top-bar {
-  background-color: #86bf2d;
+  background-color: #FFCA28;
   text-align: center;
 }
   .bar.app-top-bar .title {

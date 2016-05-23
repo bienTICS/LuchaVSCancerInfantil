@@ -3,15 +3,15 @@
     <div class="box-cell">
         <div class="box-inner padding">
             <div class="panel panel-default">
-                <div class="panel-heading"> 
-                    Diccionarios
+                <div class="panel-heading back-tcc"> 
+                    <strong>Diccionarios</strong>
                     <button md-ink-ripple="" class="md-btn md-fab m-b blue btn-add-diccionario waves-effect pull-right"><i class="mdi-content-add i-24"></i></button>
                 </div>
                 <div class="panel-body b-b b-light">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="input-group m-b">
-                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                <span class="input-group-addon back-tcc no-border"><i class="fa fa-search"></i></span>
                                 <input type="text" class="form-control" id="filter" placeholder="Buscar...">
                             </div>        
                         </div>

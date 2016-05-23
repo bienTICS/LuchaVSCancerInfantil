@@ -19,3 +19,43 @@ and open the template in the editor.
 .icono-accion{
     font-size: 23px;
 }
+.back-tcc{
+    color: white!important;
+    background: #FFCA28!important;
+}
+.color-tcc{
+    color: #FFCA28!important;
+}
+.no-border{
+    border: 1px solid transparent;
+}
+.border-color-tcc{
+    border: 1px solid #FFCA28!important;
+}
+.scrollable{
+    
+    overflow-x: hidden!important;
+}
+/* Let's get this party started */
+.scrollable::-webkit-scrollbar {
+    width: 5px;
+    
+}
+ 
+/* Track */
+.scrollable::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollable::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #2196F3; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.scrollable::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}

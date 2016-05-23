@@ -22,7 +22,8 @@ class Config extends MX_Controller{
     }
 
     public function get_head() {
-        $this->load->view('head');
+        $sql['info']=  $this->config_mdl->_get_data_condition('c_usuarios',array('usuario_id'=>$_SESSION['idUser']));
+        $this->load->view('head',$sql);
     }
     public function get_footer() {
         $this->load->view('footer');

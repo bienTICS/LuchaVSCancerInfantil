@@ -65,21 +65,96 @@ angular.module('starter.controllers', [])
 .controller('principalPublicoCtrl', function($http,$scope,$ionicPopup) {
 
 })
+/*inicio controlador */
 .controller('principalAdolecenteCtrl', function($http,$scope,$ionicPopup) {
 
 })
+.controller('adolecenteVideosCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('adolecenteRedesCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('adolecenteTestCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('adolecenteBlogCtrl', function($http,$scope,$ionicPopup) {
+
+})
+/*fin controlador adolecente*/
+/*inicio controladores Escuela & maestro*/
 .controller('principalEscuelaCtrl', function($http,$scope,$ionicPopup) {
 
 })
+.controller('escuelaVideosCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('escuelaRedesCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('escuelaTestCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('escuelaBlogCtrl', function($http,$scope,$ionicPopup) {
+
+})
+/*fin controladores Escuela & maestro*/
+/*inicio controladores Medico*/
 .controller('principalMedicoCtrl', function($http,$scope,$ionicPopup) {
 
 })
+.controller('medicoVideosCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('medicoRedesCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('medicoTestCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('medicoBlogCtrl', function($http,$scope,$ionicPopup) {
+
+})
+/*fin controladores medico*/
+/*inicio controladores paciente*/
 .controller('principalPacienteCtrl', function($http,$scope,$ionicPopup) {
 
 })
+
+.controller('pacienteOrientacionCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('pacienteDarNoticiaCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('pacienteTratamientosCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('pacienteRecomendacionesCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('pacienteApoyoCtrl', function($http,$scope,$ionicPopup) {
+
+})
+/*fin controladores paciente*/
+/*inicio controladores Padre de familia*/
 .controller('principalPadredeFamiliaCtrl', function($http,$scope,$ionicPopup) {
 
 })
+.controller('padredefamiliaRecomendacionesCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('padredefamiliaJuegosCtrl', function($http,$scope,$ionicPopup) {
+
+})
+.controller('padredefamiliaTestCtrl', function($http,$scope,$ionicPopup) {
+
+})
+
+.controller('padredefamiliaBlogCtrl', function($http,$scope,$ionicPopup) {
+
+})
+/*fin controladores Padre de familia*/
 .controller('tiposdeCancerCtrl',function ($scope,$http){
     
 })

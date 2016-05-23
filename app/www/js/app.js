@@ -51,6 +51,45 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','starter.c
             }
         }
     }) 
+    //* inicio Principal Adolecente*//
+    .state('app.adolecenteVideos', {
+        url: '/adolecenteVideos',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/adolecente/ad_videos.html',
+                controller:'adolecenteVideosCtrl'
+            }
+        }
+    }) 
+    .state('app.adolecenteRedes', {
+        url: '/adolecenteRedes',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/adolecente/ad_redes.html',
+                controller:'adolecenteRedesCtrl'
+            }
+        }
+    }) 
+    .state('app.adolecenteTest', {
+        url: '/adolecenteTest',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/adolecente/ad_test.html',
+                controller:'adolecenteTestCtrl'
+            }
+        }
+    }) 
+    .state('app.adolecenteBlog', {
+        url: '/adolecenteBlog',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/adolecente/ad_blog.html',
+                controller:'adolecenteBlogCtrl'
+            }
+        }
+    })
+    //fin
+    //* inicio Principal Escuela & Maestro*//
     .state('app.principalEscuela', {
         url: '/principalEscuela',
         views: {
@@ -60,6 +99,44 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','starter.c
             }
         }
     })
+    .state('app.escuelaVideos', {
+        url: '/escuelaVideos',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/escuela/es_videos.html',
+                controller:'escuelaVideosCtrl'
+            }
+        }
+    })
+    .state('app.escuelaRedes', {
+        url: '/escuelaRedes',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/escuela/es_redes.html',
+                controller:'escuelaRedesCtrl'
+            }
+        }
+    })
+    .state('app.escuelaTest', {
+        url: '/escuelaTest',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/escuela/es_test.html',
+                controller:'escuelaTestCtrl'
+            }
+        }
+    })
+    .state('app.escuelaBlog', {
+        url: '/escuelaBlog',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/escuela/es_blog.html',
+                controller:'escuelaBlogCtrl'
+            }
+        }
+    })
+    //fin
+    /*Inicio principal Medicos*/
     .state('app.principalMedico', {
         url: '/principalMedico',
         views: {
@@ -69,6 +146,44 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','starter.c
             }
         }
     })
+    .state('app.medicoVideos', {
+        url: '/medicoVideos',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/medicos/me_videos.html',
+                controller:'medicoVideosCtrl'
+            }
+        }
+    })
+    .state('app.medicoRedes', {
+        url: '/medicoRedes',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/medicos/me_redes.html',
+                controller:'medicoRedesCtrl'
+            }
+        }
+    })
+    .state('app.medicoTest', {
+        url: '/medicoTest',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/medicos/me_test.html',
+                controller:'medicoTestCtrl'
+            }
+        }
+    })
+    .state('app.medicoBlog', {
+        url: '/medicoBlog',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/medicos/me_blog.html',
+                controller:'medicoBlogCtrl'
+            }
+        }
+    })
+    /*fin principal Medicos*/
+    /*inicio principal pacientes*/
     .state('app.principalPaciente', {
         url: '/principalPaciente',
         views: {
@@ -78,6 +193,53 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','starter.c
             }
         }
     })
+    .state('app.pacienteOrientacion', {
+        url: '/pacienteOrientacion',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/paciente/pac_orientacion.html',
+                controller:'pacienteOrientacionCtrl'
+            }
+        }
+    })
+    .state('app.pacienteDarNoticia', {
+        url: '/pacienteDarNoticia',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/paciente/pac_cuandomedanlanoticia.html',
+                controller:'pacienteDarNoticiaCtrl'
+            }
+        }
+    })
+    .state('app.pacienteTratamientos', {
+        url: '/pacienteTratamientos',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/paciente/pac_tratamientos.html',
+                controller:'pacienteTratamientosCtrl'
+            }
+        }
+    })
+    .state('app.pacienteRecomendaciones', {
+        url: '/pacienteRecomendaciones',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/paciente/pac_recomendaciones.html',
+                controller:'pacienteRecomendacionesCtrl'
+            }
+        }
+    })
+    .state('app.pacienteApoyo', {
+        url: '/pacienteApoyo',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/paciente/pac_ligasdeapoyo.html',
+                controller:'pacienteApoyoCtrl'
+            }
+        }
+    })
+    /*fin principal pacientes*/
+    /*Inicio principal Padre de familia*/
     .state('app.principalPadredeFamilia', {
         url: '/principalPadredeFamilia',
         views: {
@@ -87,6 +249,43 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','starter.c
             }
         }
     })
+    .state('app.padredefamiliaRecomendaciones', {
+        url: '/padredefamiliaRecomendaciones',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/padredefamilia/padre_recomendaciones.html',
+                controller:'padredefamiliaRecomendacionesCtrl'
+            }
+        }
+    })
+    .state('app.padredefamiliaJuegos', {
+        url: '/padredefamiliaJuegos',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/padredefamilia/padre_juegos.html',
+                controller:'padredefamiliaJuegosCtrl'
+            }
+        }
+    })
+    .state('app.padredefamiliaTest', {
+        url: '/padredefamiliaTest',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/padredefamilia/padre_test.html',
+                controller:'padredefamiliaTestCtrl'
+            }
+        }
+    })
+    .state('app.padredefamiliaBlog', {
+        url: '/padredefamiliaBlog',
+        views: {
+            'menuContent': {
+                templateUrl:'templates/padredefamilia/padre_blog.html',
+                controller:'padredefamiliaBlogCtrl'
+            }
+        }
+    })
+    /*inicio principal Padre de familia*/
     .state('app.queeselCancer', {
         url: '/queeselCancer',
         views: {

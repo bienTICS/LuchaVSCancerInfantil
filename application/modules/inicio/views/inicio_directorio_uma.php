@@ -3,8 +3,8 @@
     <div class="box-cell">
         <div class="box-inner padding">
             <div class="panel panel-default">
-                <div class="panel-heading"> 
-                    Directorio de unidades médicas acreditadas.
+                <div class="panel-heading back-tcc"> 
+                    <strong>Directorio de unidades médicas acreditadas.</strong>
                     <a href="<?=  base_url()?>inicio/agregar_uma?a=add&uma=0">
                         <button md-ink-ripple="" class="md-btn md-fab m-b blue waves-effect pull-right"><i class="mdi-content-add i-24"></i></button>
                     </a>
@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="input-group m-b">
-                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                <span class="input-group-addon back-tcc no-border"><i class="fa fa-search"></i></span>
                                 <input type="text" class="form-control" id="filter" placeholder="Buscar...">
                             </div>        
                         </div>

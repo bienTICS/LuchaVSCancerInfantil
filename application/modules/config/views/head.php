@@ -35,8 +35,8 @@
             <aside id="aside" class="app-aside modal  " role="menu">
                 <div class="left ">
                     <div class="box back-imss">
-                        <div class="navbar md-whiteframe-z1 waves-effect no-radius blue text-center  back-imss-all "  style="padding:9px;width: 100%">
-                            <span class="h2 " style="font-weight: bold;font-size: 22px;">TODOS vs Cáncer infantil.</span>
+                        <div class="navbar md-whiteframe-z1 waves-effect no-radius back-tcc text-center  back-imss-all "  style="padding:21px;width: 100%">
+                            <span class="h2 " style="font-weight: bold;font-size: 17px;">TODOS vs Cáncer infantil</span>
                             <!-- / brand -->
                         </div>
                         <div class="box-row">
@@ -45,7 +45,7 @@
                                     <div class="p hidden-folded blue-50 text-center back-imss" >
                                         <div class="rounded bg-white inline pos-rlt" style="width: 120px;height: 120px">
                                             <center>
-                                            <img src="<?=  base_url()?>assets/img/logo.png" class="img-responsive rounded" style="background-size: cover;width: 70px;margin-top: 20px">
+                                            <img src="<?=  base_url()?>assets/img/perfiles/<?=$info[0]['usuario_perfil']?>" class="img-responsive rounded" style="background-size: cover;width: 100%;margin-top: 0px">
                                             </center>
                                         </div>
                                         <a class="block m-t-sm" target="#nav, #account">
@@ -242,7 +242,7 @@
                             <li>
                                 <a md-ink-ripple >
                                     <center>
-                                    <img src="<?=  base_url()?>assets/img/perfiles/default.png" style="width: 70%">
+                                    <img src="<?=  base_url()?>assets/img/perfiles/<?=$info[0]['usuario_perfil']?>" style="width: 40px">
                                     </center>
                                 </a>
                             </li>

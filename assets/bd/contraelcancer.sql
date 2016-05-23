@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `c_directorios_osc` (
   PRIMARY KEY (`osc_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
--- Volcando datos para la tabla contraelcancer.c_directorios_osc: ~0 rows (aproximadamente)
+-- Volcando datos para la tabla contraelcancer.c_directorios_osc: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `c_directorios_osc` DISABLE KEYS */;
 INSERT INTO `c_directorios_osc` (`osc_id`, `osc_organizacion`, `osc_direccion`, `osc_telefono`, `osc_sitioweb`, `osc_servicios`, `estado_id`) VALUES
 	(1, 'Asociación Mexicana de Ayuda a Niños con Cáncer I.A.P. (AMANC) ', 'Oficina dentro del Hospital Centenario Miguel Hidalgo, calle Galeana Sur No. 465, Col. Obraje C.P. 20230, Aguascalientes, Ags. , Monroy No. 109 Int 1, Barrio de San Marcos, C.P. 20070, Aguascalientes, Ags.', '(0144) 9994-6720  Ext. 4651,(0144) 9918-7410 Ext. 16', 'N/E', 'Albergue, alimentación, medicamentos, transporte a\r\nhospitales y traslados a comunidades, prótesis.', '1');
@@ -151,20 +151,21 @@ CREATE TABLE IF NOT EXISTS `c_usuarios` (
   `usuario_email` text COLLATE ucs2_spanish_ci NOT NULL,
   `usuario_user` text COLLATE ucs2_spanish_ci NOT NULL,
   `usuario_pass` text COLLATE ucs2_spanish_ci NOT NULL,
+  `usuario_perfil` text COLLATE ucs2_spanish_ci NOT NULL,
   `rol_id` text COLLATE ucs2_spanish_ci NOT NULL,
   PRIMARY KEY (`usuario_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
--- Volcando datos para la tabla contraelcancer.c_usuarios: ~7 rows (aproximadamente)
+-- Volcando datos para la tabla contraelcancer.c_usuarios: ~6 rows (aproximadamente)
 /*!40000 ALTER TABLE `c_usuarios` DISABLE KEYS */;
-INSERT INTO `c_usuarios` (`usuario_id`, `usuario_nombre`, `usuario_apellidos`, `usuario_direccion`, `usuario_telefono`, `usuario_email`, `usuario_user`, `usuario_pass`, `rol_id`) VALUES
-	(1, 'Felipe de jesus', 'Perez Perez', 'N/E', '9611688697', 'itifjpp@gmail.com', 'admin', '21232f297a57a5a743894a0e4a801fc3', '1'),
-	(2, 'Felipe de jesus', 'Perez Perez', 'N/E', '9611688697', 'itifjpp@gmail.com', 'publico', '83951dcbdb9d96d2e43b8f20c3663943', '2'),
-	(3, 'Felipe de jesus', 'Perez Perez', 'N/E', '9611688697', 'itifjpp@gmail.com', 'adolecente', '6985e2039005d3746578d7f821f877ae', '3'),
-	(4, 'Felipe de jesus', 'Perez Perez', 'N/E', '9611688697', 'itifjpp@gmail.com', 'escuela', 'de57c5aeab2f35cee809fe5d00272fe9', '4'),
-	(5, 'Felipe de jesus', 'Perez Perez', 'N/E', '9611688697', 'itifjpp@gmail.com', 'paciente', 'd243800a7d0ba0f87081bcdd832bb05f', '5'),
-	(6, 'Felipe de jesus', 'Perez Perez', 'N/E', '9611688697', 'itifjpp@gmail.com', 'medico', '652044ac6e008761b3e6141748a99880', '6'),
-	(7, 'Felipe de jesus', 'Perez Perez', 'N/E', '9611688697', 'itifjpp@gmail.com', 'padredefamilia', '18335e8b3474ee2f4b96fd4e9ac34b13', '7');
+INSERT INTO `c_usuarios` (`usuario_id`, `usuario_nombre`, `usuario_apellidos`, `usuario_direccion`, `usuario_telefono`, `usuario_email`, `usuario_user`, `usuario_pass`, `usuario_perfil`, `rol_id`) VALUES
+	(1, 'Troy Mills', '', '4227 Hammer Ln', '(464)-867-7744', 'troy.mills60@example.com', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'default.jpg', '1'),
+	(2, 'Troy Mills', '', '4227 Hammer Ln', '(464)-867-7744', 'troy.mills60@example.com', 'publico', '83951dcbdb9d96d2e43b8f20c3663943', 'default.jpg', '2'),
+	(3, 'Troy Mills', '', '4227 Hammer Ln', '(464)-867-7744', 'troy.mills60@example.com', 'adolecente', '6985e2039005d3746578d7f821f877ae', 'default.jpg', '3'),
+	(4, 'Troy Mills', '', '4227 Hammer Ln', '(464)-867-7744', 'troy.mills60@example.com', 'escuela', 'de57c5aeab2f35cee809fe5d00272fe9', 'default.jpg', '4'),
+	(5, 'Troy Mills', '', '4227 Hammer Ln', '(464)-867-7744', 'troy.mills60@example.com', 'paciente', 'd243800a7d0ba0f87081bcdd832bb05f', 'default.jpg', '5'),
+	(6, 'Troy Mills', '', '4227 Hammer Ln', '(464)-867-7744', 'troy.mills60@example.com', 'medico', '652044ac6e008761b3e6141748a99880', 'default.jpg', '6'),
+	(7, 'Troy Mills', '', '4227 Hammer Ln', '(464)-867-7744', 'troy.mills60@example.com', 'padredefamilia', '18335e8b3474ee2f4b96fd4e9ac34b13', 'default.jpg', '7');
 /*!40000 ALTER TABLE `c_usuarios` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
