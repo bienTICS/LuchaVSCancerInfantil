@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">	
-        <title><?php echo "$name  $label"; ?></title>
+        <title>Lucha VS El Cáncer Infantil</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -16,7 +16,7 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'> 
         <script src="demo/js/respond.src.js"></script>
     </head>
-    <body id="body" class="user-select-none">
+    <body id="" class="user-select-none" style="overflow: visible!important">
         <!-- Header -->
         <header>
             <div class="left">
