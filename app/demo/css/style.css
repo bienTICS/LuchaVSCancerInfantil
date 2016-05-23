@@ -2186,8 +2186,10 @@ iframe {
   background-color: #fff;
   position: relative;
   margin: 0 auto;
-  width: 326px;
-  height: 580px;
+  top: 10px;
+  left: -150px;
+  width: 267px;
+  height: 477px;
   border: 0;
   display: block;
   -moz-box-shadow: 0 0 100px rgba(0, 0, 0, 0.75);

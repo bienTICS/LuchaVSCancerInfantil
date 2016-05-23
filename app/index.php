@@ -18,7 +18,7 @@
     </head>
     <body id="" class="user-select-none" style="overflow: visible!important">
         <!-- Header -->
-        <header >
+        <header style="display: none">
             <div class="left">
                 <div class="logo"><a href="#"><img src="demo/img/logo.png" alt=""></a></div>
             </div>
@@ -127,7 +127,10 @@
             <div id="preview-img"><div></div></div>
         </header>
         <div class="clear"></div>
-        <div class="dev">        
+        <div class="dev">
+            <center>
+            <img src="demo/img/dev/not3.png" style="width: 300px;margin-top: 10px;;z-index: 100000000">
+            </center>
             <div class="bar-clear"></div>
         </div>
 	<section class="section">	
