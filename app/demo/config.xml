@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<themes><!-- All Themes -->
+	
+
+<!-- DEMO 1  -->
+<dima>
+  <dataUrl>?theme=dima</dataUrl>
+  <name>DimaSoon</name>
+  <label>HTML5/CSS3</label>
+  <color>#8e44ad</color>
+  <dataPreview>img/preview/Dima.jpg</dataPreview>
+  <Price>0</Price>
+  <purchaseUrl>http://www.vivepueblosmagicos.net/</purchaseUrl>
+  <temblitesUrl>http://www.vivepueblosmagicos.net/</temblitesUrl>
+  <rating>3</rating>
+</dima>
+<!-- !DEMO 1  -->
+
+<!-- DEMO 2  -->
+<target>
+  <dataUrl>?theme=target</dataUrl>
+  <name>TargetDima</name>
+  <label>HTML5/CSS3</label>
+  <color>#e74c3c</color>
+  <dataPreview>img/preview/Target.jpg</dataPreview>
+  <Price>0</Price>
+  <purchaseUrl>http://www.vivepueblosmagicos.net/</purchaseUrl>
+  <temblitesUrl>http://www.vivepueblosmagicos.net/</temblitesUrl>
+  <rating>4.5</rating>
+</target>
+<!-- !DEMO 2  -->
+
+
+</themes>
+

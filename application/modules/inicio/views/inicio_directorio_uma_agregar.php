@@ -12,29 +12,29 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form-group">
-                                <input class="md-input" name="directorio_nombre" required="">
+                                <input class="md-input" name="directorio_nombre" required="" value="<?=$uma[0]['directorio_nombre']?>">
                                 <label>Unidad Médica Acreaditada</label>
                             </div>
                             <div class="md-form-group">
-                                <input class="md-input" name="directorio_direccion" required="">
+                                <input class="md-input" name="directorio_direccion" required="" value="<?=$uma[0]['directorio_direccion']?>">
                                 <label>Dirección</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="md-form-group">
-                                <input class="md-input" name="directorio_telefono" required="">
+                                <input class="md-input" name="directorio_telefono" required="" value="<?=$uma[0]['directorio_telefono']?>">
                                 <label>Telefono</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="md-form-group">
-                                <input class="md-input" name="directorio_email" required="">
+                                <input class="md-input" name="directorio_email" required="" value="<?=$uma[0]['directorio_email']?>">
                                 <label>Email</label>
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="md-form-group">
-                                <input class="md-input tagsinput" style="width: 100%!important" required="" name="directorio_acreditaciones">
+                                <input class="md-input tagsinput" style="width: 100%!important" value="<?=$uma[0]['directorio_acreditaciones']?>" required="" name="directorio_acreditaciones">
                                 <label>Tipo de acreditación</label>
                             </div>
                         </div>

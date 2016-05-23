@@ -40,6 +40,9 @@
                                         <td><?=$value['directorio_email']?></td>
                                         <td><?=$value['estado_nombre']?></td>
                                         <td class="text-center">
+                                            <a href="<?=  base_url()?>inicio/agregar_uma?a=edit&uma=<?=$value['directorio_id']?>">
+                                                <i class="fa fa-pencil icono-accion"></i>
+                                            </a>&nbsp;
                                             <i class="fa fa-trash-o pointer icono-accion" data-id="<?=$value['diccionario_id']?>"></i>
                                         </td>
                                     </tr>

@@ -49,7 +49,8 @@ class Inicio extends Config{
         $this->load->view('inicio_directorio_uma',$sql);
     }
     public function agregar_uma() {
-        $this->load->view('inicio_directorio_uma_agregar');
+        $sql['uma']=  $this->config_mdl->_get_data_condition('c_directorio_uma',array('directorio_id'=>  $this->input->get_post('uma')));
+        $this->load->view('inicio_directorio_uma_agregar',$sql);
     }
     public function listar_estados() {
         $sql=  $this->config_mdl->_get_data('c_estados');
