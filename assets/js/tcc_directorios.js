@@ -69,7 +69,7 @@ $(document).ready(function (){
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
             $('.estado_id').html(data.option);
-            $('.estado_id').val($('.estado_id').attr('data-id'))
+            $('.estado_id').val($('.estado_id').attr('data-id'));
         },error: function (jqXHR, textStatus, errorThrown) {
             msj_error_serve();
         }

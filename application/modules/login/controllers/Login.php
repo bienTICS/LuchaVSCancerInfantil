@@ -30,4 +30,7 @@ class Login extends Config{
             $this->setOutput(array('accion'=>'2'));
         }
     }  
+    public function app() {
+        $this->load->view('app');
+    }
 }
