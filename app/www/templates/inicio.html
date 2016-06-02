@@ -1,12 +1,24 @@
-<ion-view style="background-image: url(img/background.jpg);background-position: center;background-size: cover" >
+<ion-view style="background-image: url(img/fondo.jpg);background-position: center;background-size: cover" >
     <ion-content >
         <div class="padding">
-            <h6 class="text-center text-login" style="color: white">
+            <h6 class="text-center text-login" style="color: black">
                 &copy; Derechos reservados 2016 | Desarrollado por bienTICS
             </h6>
+            <div class="row" style="padding: 20px">
+                <div class="container-inicio" style="height: {{height/1.4}}px">
+                    <br>
+                    <div class="circulo-logo">
+                        <center>
+                        <img src="img/logo.jpg" >
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 20px">
+                <button class="button button-clear button-block background-tcc btn-login font-tcc" ng-click="modal.show()">Ingresar</button>
+            </div>
+            
         </div>
     </ion-content>
-    <ion-footer-bar align-title="left" class="background-imss">
-        <button class="button button-clear button-block background-imss font-tcc" ng-click="modal.show()">Ingresar</button>
-    </ion-footer-bar>
+
 </ion-view>

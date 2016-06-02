@@ -9,6 +9,7 @@ angular.module('starter.controllers', [])
     }
 })
 .controller('homeCtrl', function($scope, $ionicModal, $timeout,Login,$state,$ionicPopup,$ionicLoading,URL_API,$http) {
+    $scope.height=screen.height;
     $('body').on('submit','.form-login',function (e){
         e.preventDefault();
         $ionicLoading.show({})
