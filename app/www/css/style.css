@@ -42,7 +42,7 @@
     color: white!important;
 }
 .input-login ::-webkit-input-placeholder {
-   color: black!important;  
+   color: #F0A224!important;  
    font-family: inherit;
    font-family: tcc!important;
 }
@@ -103,7 +103,14 @@
     margin-top: 20px; 
     /*border: 7px solid white;*/
 }
-.container-inicio .circulo-logo{
+.color-tcc{
+    
+    color: #F0A224!important;
+}
+.back-tcc{
+    background: #F0A224!important;
+}
+.circulo-logo{
     width: 120px;
     height: 120px;
     background: white;  
@@ -111,7 +118,7 @@
     margin: auto;
     border:3px solid white;
 }
-.container-inicio .circulo-logo img{
+.circulo-logo img{
     width: 75px;
     margin: auto;
     border-radius: 100px;
@@ -124,4 +131,13 @@
 .background-tcc{
     background: #FFCA28!important;
     color: white!important;
+}
+.text-register{
+    font-family: tcc;
+    font-size: 20px;
+    text-align: center!important;
+}
+.input-back{
+    color: #F0A224!important;
+    border-bottom: 1px solid #F0A224!important;
 }

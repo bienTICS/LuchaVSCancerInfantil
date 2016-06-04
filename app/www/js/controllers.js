@@ -63,6 +63,26 @@ angular.module('starter.controllers', [])
         animation: 'slide-in-up'
     }); 
 })
+.controller('registroCtrl',function ($scope,$http,URL_API,$ionicLoading){
+    $('body').on('submit','.form-registro',function (e){
+        var el=$(this);
+        $ionicLoading.show({})
+        $http({
+            url: URL_API+'api_register_user', 
+            method: "POST",
+            data: $(this).serialize()
+            ,headers: {
+                'Content-type': "application/x-www-form-urlencoded; charset=UTF-8"
+            }
+        }).success(function (data){
+            $ionicLoading.hide();
+            el[0].reset();
+            console.log(data)
+        }).error(function (e){
+            
+        })
+    })
+})
 .controller('principalPublicoCtrl', function($http,$scope,$ionicPopup) {
 
 })

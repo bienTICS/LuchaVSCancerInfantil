@@ -22,10 +22,20 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','starter.c
     $ionicConfigProvider.tabs.position('bottom');
     $ionicConfigProvider.navBar.alignTitle('center');
     $stateProvider
-    .state('home', {
+    .state('auth', {
+        url: '/auth',
+        abstract: true,
+        templateUrl: 'templates/auth.html'
+    })    
+    .state('auth.home', {
         url: '/home',
         templateUrl: 'templates/inicio.html',
         controller: 'homeCtrl'
+    })
+    .state('auth.registro', {
+        url: '/registro',
+        templateUrl: 'templates/registro.html',
+        controller: 'registroCtrl'
     })
     .state('app', {
         url: '/app',
@@ -493,5 +503,5 @@ angular.module('starter', ['ionic','ngCordova', 'starter.controllers','starter.c
             }
         }
     })
-    $urlRouterProvider.otherwise('home');
+    $urlRouterProvider.otherwise('/auth/home');
 });

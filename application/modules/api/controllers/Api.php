@@ -29,6 +29,21 @@ class Api extends MX_Controller{
         }
         $this->setOutput($json); 
     }
+    public function api_register_user() {
+        $data=array(
+            'usuario_nombre'=>  $this->input->post('usuario_nombre'),
+            'usuario_email'=>  $this->input->post('usuario_email'),
+            'usuario_user'=>  $this->input->post('usuario_user'),
+            'usuario_pass'=> md5($this->input->post('usuario_pass')), 
+            'rol_id'=>  $this->input->post('rol_id')
+        );
+        if($this->api_mdl->_insert('c_usuarios',$data)){
+            $this->setOutput(array('accion'=>'1'));
+        }else{
+            $this->setOutput(array('accion'=>'2'));
+        }
+        
+    }
     public function api_diccionarios() {
         $this->setOutput($this->api_mdl->_get_data('c_diccionarios'));
     }

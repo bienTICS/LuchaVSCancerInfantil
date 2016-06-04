@@ -8,7 +8,15 @@
       </div>
     </header>
     <ion-content>
-        <form class="form-login" style="margin-top: 150px;margin-left: 20px;margin-right: 20px">
+        <br><br>
+        <div class="row">
+            <div class="circulo-logo">
+                <center>
+                <img src="img/logo.jpg" >
+                </center>
+            </div>
+        </div>
+        <form class="form-login" style="margin-top: 20px;margin-left: 20px;margin-right: 20px">
             <div style="">
                 <div class="list list-inset form-input-login" style="background: transparent;margin-top: -10px">
                     <label class="item item-input input-login">
@@ -20,13 +28,14 @@
                         <input type="password" placeholder="Contraseña" class="font-tcc input-back txt-pass black" required="">
                     </label>
                 </div>
-                <center>
-                    <button type="submit" class="button btn-login-accesar button-small ">Accesar</button>
-                </center>
-                <center>
-                    <br>
-                    <button type="submit" ng-click="modal.hide()" ui-sref="app.principalPublico" class="button btn-login-accesar button-small ">Usuario Anónimo</button>
-                </center>
+                <div class="row">
+                    <div class="col col-50">
+                        <button type="submit" ng-click="modal.hide()" ui-sref="app.principalPublico" class="button btn-login-accesar button-small ">Usuario Anónimo</button>
+                    </div>
+                    <div class="col col-50">
+                        <button type="submit" class="button btn-login-accesar button-small ">Accesar</button>
+                    </div>
+                </div>
             </div>
         </form>   
         <center>
@@ -46,6 +55,6 @@
         </center>
     </ion-content>
     <ion-footer-bar align-title="left" class="background-tcc">
-        <button class="button button-clear button-block  font-tcc color-white" style="top: -10px!important;font-size: 15px" >No tienes una cuenta? Regístrate</button>
+        <button class="button button-clear button-block  font-tcc color-white" style="top: -10px!important;font-size: 15px" ui-sref="auth.registro" ng-click="modal.hide()">No tienes una cuenta? Regístrate</button>
     </ion-footer-bar>
 </ion-view>

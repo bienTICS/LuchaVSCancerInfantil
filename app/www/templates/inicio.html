@@ -1,23 +1,42 @@
-<ion-view style="background-image: url(img/fondo.jpg);background-position: center;background-size: cover" >
+<ion-view style="background-image: url(img/fondotcc.jpg);background-position: center;background-size: cover" >
     <ion-content >
         <div class="padding">
-            <h6 class="text-center text-login" style="color: black">
-                &copy; Derechos reservados 2016 | Desarrollado por bienTICS
-            </h6>
-            <div class="row" style="padding: 20px">
-                <div class="container-inicio" style="height: {{height/1.4}}px">
-                    <br>
-                    <div class="circulo-logo">
-                        <center>
-                        <img src="img/logo.jpg" >
-                        </center>
-                    </div>
+            <div class="row">
+                <div class="" >  
+                    <img src="img/logo_todos.png" style="width: 100%;margin-left: -20px">
                 </div>
             </div>
-            <div class="row" style="padding: 20px">
-                <button class="button button-clear button-block background-tcc btn-login font-tcc" ng-click="modal.show()">Ingresar</button>
-            </div>
-            
+            <form class="form-login" style="margin-top: -40px;margin-left: 20px;margin-right: 20px">
+                <div style="">
+                    <div class="list list-inset form-input-login" style="background: transparent;margin-top: -10px;padding: 20px">
+                        <label class="item item-input input-login">
+                            <i class="icon ion-ios-person-outline color-tcc"></i>
+                            <input type="text" placeholder="Usuario" class="font-tcc input-back txt-user black" required="">
+                        </label>
+                        <label class="item item-input input-login" style="margin-top: 10px">
+                            <i class="icon ion-ios-unlocked-outline placeholder-icon color-tcc"></i>
+                            <input type="password" placeholder="Contraseña" class="font-tcc input-back txt-pass black" required="">
+                        </label>
+                    </div>
+                    <div class="row" style="padding: 27px;margin-top: -60px">
+                        <button type="submit" class="button button-block btn-login-accesar back-tcc ">Ingresar</button>
+                    </div>
+                    <div class="color-tcc font-tcc " style="padding: 27px;margin-top: -50px;text-align: center!important">
+                        Olvide mi  contraseña?
+                    </div>
+                    <div class="row">
+                        <div class="col col-50">
+                            <p class="font-tcc color-tcc">Nuevo usuario?</p>
+                            <a href="" ng-click="loginFacebook()">
+                                <img src="img/login/i-facebook.png" style="width: 140px;height: 30px">
+                            </a>
+                            <a href="" ng-click="googleSignIn()">
+                                <img src="img/login/i-google.png" style="width: 140px;height: 30px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>             
         </div>
     </ion-content>
 
