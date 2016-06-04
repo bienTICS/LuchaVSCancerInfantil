@@ -5,7 +5,7 @@ angular.module('starter.controllers', [])
         $ionicLoading.hide()
         $ionicHistory.clearCache();
         $ionicHistory.clearHistory();
-        $state.go('home');
+        $state.go('auth.home');
     }
 })
 .controller('homeCtrl', function($scope, $ionicModal, $timeout,Login,$state,$ionicPopup,$ionicLoading,URL_API,$http) {
