@@ -143,7 +143,7 @@
                bottom: 0px;
                top: 270px;
                height: 23px;
-               ">
+               " target="_blank">
                 Ver Panel de administración
             </a>
             </center>
