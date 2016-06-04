@@ -24,13 +24,13 @@
                     <div class="color-tcc font-tcc " style="padding: 27px;margin-top: -50px;text-align: center!important">
                         Olvide mi  contraseña?
                     </div>
-                    <div class="row">
+                    <div class="row"  style="padding: 27px;">
                         <div class="col col-50">
-                            <p class="font-tcc color-tcc">Nuevo usuario?</p>
-                            <a href="" ng-click="loginFacebook()">
+                            <a ui-sref="auth.registro" class="font-tcc color-tcc " style="text-decoration: none">Nuevo usuario?</a>
+                            <a href="" ng-click="loginFacebook()" hidden="">
                                 <img src="img/login/i-facebook.png" style="width: 140px;height: 30px">
                             </a>
-                            <a href="" ng-click="googleSignIn()">
+                            <a href="" ng-click="googleSignIn()" hidden="">
                                 <img src="img/login/i-google.png" style="width: 140px;height: 30px">
                             </a>
                         </div>
